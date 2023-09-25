@@ -1,4 +1,7 @@
 #Caeser Cipher
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 
+                'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 
+                'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 def caeser_cipher(opt,text,shift_amount):
     ans=""
     if opt=="decode":
@@ -14,9 +17,7 @@ def caeser_cipher(opt,text,shift_amount):
 
 should_end=False
 while not should_end:
-    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 
-                'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 
-                'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    
     operation=input("Type \"encode\" for encrypt or \"decode\" for decrypt\n")
     message=input("Type your message: ")
     shift_number=int(input("Enter your shift number: "))
