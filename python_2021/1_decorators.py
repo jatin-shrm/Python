@@ -4,7 +4,7 @@ def dec1(func1):
         func1()
         print("Executed")
     return nowjatin
-@dec1
+@dec1()
 def I_am_Jatin():
     print("I am Jatin")
 I_am_Jatin()
