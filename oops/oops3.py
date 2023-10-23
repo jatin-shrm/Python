@@ -11,5 +11,6 @@ class Vehicle:
 class Bus(Vehicle):
     def seating_capacity(self, capacity=50):
         return super().seating_capacity(capacity)
+
 School_bus = Bus("School Volvo", 180, 12)
 print(School_bus.seating_capacity())
